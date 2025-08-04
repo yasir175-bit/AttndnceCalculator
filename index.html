@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attendance Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Attendance Calculator</h1>
+
+  <div class="container">
+    <div class="form-group">
+      <label for="total">Total Classes Held:</label>
+      <input type="number" id="total" placeholder="e.g. 40">
+    </div>
+
+    <div class="form-group">
+      <label for="attended">Classes Attended:</label>
+      <input type="number" id="attended" placeholder="e.g. 32">
+    </div>
+
+    <!-- Animated Calculate Button -->
+    <button onclick="calculateAttendance()">
+      <span class="shadow"></span>
+      <span class="edge"></span>
+      <span class="front text">Calculate</span>
+    </button>
+  </div>
+
+  <div class="result-box">
+    <h2>RESULT</h2>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
